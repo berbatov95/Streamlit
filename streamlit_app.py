@@ -5,7 +5,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-df = pd.read_csv(r"C:\Users\daro9\Documents\DataScientest\train.csv")
+df = pd.read_csv(r"train.csv")
 
 st.title("Titanic : binary classification project")
 st.sidebar.title("Table of contents")
