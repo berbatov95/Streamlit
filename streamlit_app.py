@@ -52,9 +52,6 @@ if page == pages[1] :
     fig = sns.lmplot(x='Age', y='Survived', hue="Pclass", data=df)
     st.pyplot(fig)
 
-    fig, ax = plt.subplots()
-    sns.heatmap(df.corr(), ax=ax)
-    st.write(fig)
 
 if page == pages[2] : 
     st.write("### Modelling")
