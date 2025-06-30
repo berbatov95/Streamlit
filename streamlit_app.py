@@ -7,6 +7,13 @@ import seaborn as sns
 
 df = pd.read_csv("train.csv")
 
+import os
+
+if os.path.exists("train.csv"):
+    df = pd.read_csv("train.csv")
+else:
+    st.error("❌ El archivo 'train.csv' no fue encontrado.")
+
 st.title("Titanic : binary classification project")
 st.sidebar.title("Table of contents")
 pages=["Exploration", "DataVizualization", "Modelling"]
